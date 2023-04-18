@@ -1,6 +1,9 @@
 import React from 'react'
+import {HiHome} from 'react-icons/hi'
+import {FaUserAlt} from 'react-icons/fa'
+import {AiOutlineMenu} from 'react-icons/ai'
 import {motion} from "framer-motion"
-import { HomeContainerStyled, LinkContainerStyled, LinksContainerStyled, NavbarContainerStyled } from './navbarStyles'
+import { HomeContainerStyled, LinkContainerStyled, LinksContainerStyled, MenuContainerStyled, NavbarContainerStyled, SpanStyled, UserContainerStyled, UserNavStyled  } from './navbarStyles'
 
 const Navbar = () => {
   return (
@@ -16,15 +19,30 @@ const Navbar = () => {
                 <motion.div whileTap={{scale: 0.9 }}>
                     <a href="#">
                         <LinkContainerStyled>
-
+                          <HiHome/>  
                         </LinkContainerStyled>
                         Home
                     </a>
                 </motion.div>
             </HomeContainerStyled>
             
+            <UserNavStyled>
+                <UserContainerStyled>
+                    <SpanStyled>
+                        Inicia Sesion
+                    </SpanStyled>
+                    <FaUserAlt/>
 
+                </UserContainerStyled>
+            </UserNavStyled>
 
+            <motion.div>
+                <MenuContainerStyled>
+
+                    <AiOutlineMenu/>
+
+                </MenuContainerStyled>
+            </motion.div>
         </LinksContainerStyled>
     </NavbarContainerStyled>
   )
