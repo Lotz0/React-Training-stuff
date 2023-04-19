@@ -36,13 +36,13 @@ const Navbar = () => {
                 </UserContainerStyled>
             </UserNavStyled>
 
-            <motion.div>
+            <motion.div whileTap={{scale: 0.9 }}>
                 <MenuContainerStyled>
 
                     <AiOutlineMenu/>
 
                 </MenuContainerStyled>
-            </motion.div>
+            </motion.div >
         </LinksContainerStyled>
     </NavbarContainerStyled>
   )

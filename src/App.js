@@ -1,21 +1,12 @@
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-   <>
-  <Navbar />
-   {
-    /**navbar
-     * 
-     * container
-     *      Hero
-     *      Categorias
-     *      productos 
-     * footer
-     * 
-     */
-   }
-   </>
+    <>
+      <Navbar />
+      {<Footer />}
+    </>
   );
 }
 
